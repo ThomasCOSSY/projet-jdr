@@ -1,0 +1,81 @@
+body {
+    color: black;
+    background-color: black;
+    
+
+}
+.container{
+    position: absolute;
+    top: 2vw;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+.parchemin {
+    position: relative;
+    top: 20vw;
+
+}
+
+.title {
+    position: relative;
+    top: 15vw;
+    font-size: 2vw;
+}
+
+.img1 {
+    width: 50%;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.cadreOverFlow {
+    overflow: auto;
+    height: 50vw;
+}
+
+button {
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 1vw 2vw;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: white;
+    font-size: 2vw;
+    font-family: Georgia, Serif;
+    text-decoration: none;
+    vertical-align: middle;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+}
+
+.button:hover {
+    border-top-color: #040405;
+    background: #040405;
+    color: #f7f7f7;
+}
+
+.button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+}
+
+p{
+    font-size: 1vw;
+}

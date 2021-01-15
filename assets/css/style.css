@@ -1,0 +1,102 @@
+body{
+  background-color: #778DC6;
+}
+
+a {
+  rotate: -10deg;
+}
+
+.title{
+  font-size: 5vw;
+}
+
+
+.middle{
+  top: 30%;
+}
+
+area{
+  border: black;
+}
+
+/* navbar */
+nav{
+  position: relative;
+  top: 1vw;
+  left: 3.3vw;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #354bb9;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;  
+  background-color: #778DC6;
+}
+
+.nav-item {
+  margin: 0 auto;
+  padding: auto 0;
+}
+
+.nav-item:hover {
+  border: 1px solid darkgray;
+}
+
+.p-4 ul {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  align-items: center;
+}
+
+.navbar-toggler {
+  background-color: #354bb9;
+}
+
+.navbar-toggler:hover {
+  background-color: white;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(1, 26, 149)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+li:hover {
+  background-color: #6ccce7;
+}
+
+/* bouton */
+
+button {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 10.5px 21px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  border-radius: 32px;
+  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+  color: white;
+  font-size: 2vw;
+  font-family: Georgia, Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  position: absolute;
+ }
+.button:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+  }
+.button:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
+  }
