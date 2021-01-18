@@ -12,49 +12,38 @@
 
 <body>
 
-    <div class="Nav-fluid justify-content-center">
-        <div class="fixed-top " style="width: max-content;">
-            <nav class="navbar navbar-dark">
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="p-4">
-                    <ul class="navbar-nav text-center col-12 m-auto">
-                        <li class="nav-item w-100 border border-dark m-1">
-                            <a class="nav-link" href="history.html">Histoire du monde</a>
-                        </li>
-                        <li class="nav-item w-100 border border-dark m-1">
-                            <a class="nav-link" href="rules.html">règles de jeux</a>
-                        </li>
-                        <li class="nav-item w-100 border border-dark m-1">
-                            <a class="nav-link" href="divinity.html">Divinités</a>
-                        </li>
-                        <li class="nav-item w-100 border border-dark m-1">
-                            <a class="nav-link" href="skill.html">Compétences</a>
-                        </li>
-                        <li class="nav-item w-100 border border-dark m-1">
-                            <a class="nav-link" href="shop.html">Magasin</a>
-                        </li>
-                        <li class="nav-item w-100 border border-dark m-1">
-                            <a class="nav-link" href="identification.html">se connecter</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+<div class=" d-none d-xl-block d-lg-block d-md-block">
+    <ul class="nav nav-tabs bg-white">
+        <li class="nav-item">
+          <a class="nav-link active" href="homePC.html">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
+          <div class="dropdown-menu">
+            <a class="nav-link" href="history.html">Histoire du monde</a>
+            <a class="nav-link" href="rules.html">règles de jeux</a>
+            <a class="nav-link" href="divinity.html">Divinités</a>
+            <a class="nav-link" href="skill.html">Compétences</a>
+            <a class="nav-link" href="shop.html">Magasin</a>            
+                      
+          </div>
+        </li>        
+            <a class="nav-link" href="identification.html">se connecter</a>
+        </li>
+        
+      </ul>
+    </div>     
+    
 
 
     <h1 class="text-center mt-2 title">La tour céleste</h1>
 
+    
 <!-- grand ecran -->
     <div class="d-none d-xl-block d-lg-block d-md-block">
-        <div class="text-center"><img src="assets/img/towercity2.jpg" class="mt-2" width="800px" alt="" usemap="#map-1">
+        <div class="d-flex justify-content-center">
+            <img src="assets/img/grimgar.jpg" alt="image d avanturiers" width="800px" class="m-5">
+            <img src="assets/img/towercity2.jpg" class="m-5" width="800px" alt="image d'une ville" usemap="#map-1">
         </div>
 
         <map name="map-1">
@@ -81,8 +70,52 @@
 
     </div>
 
+    <article class="d-none d-xl-block d-lg-block d-md-block">
+        <div class="text-center">
+            <h2 class="white"> Infos</h2>
+            <p class="white">Clic sur la ville pour naviguer sur le site !</p>
+        </div>
+    </article>
+
 
 <!-- petit ecran -->
+
+<div class="Nav-fluid justify-content-center d-block d-md-none d-lg-none d-xl-none">
+    <div class="fixed-top " style="width: max-content;">
+        <nav class="navbar navbar-dark">
+            <button class="navbar-toggler custom-toggler mt-5" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+                <ul class="navbar-nav text-center col-12 m-auto">
+                    <li class="nav-item w-100 border border-dark m-1">
+                        <a class="nav-link" href="history.html">Histoire du monde</a>
+                    </li>
+                    <li class="nav-item w-100 border border-dark m-1">
+                        <a class="nav-link" href="rules.html">règles de jeux</a>
+                    </li>
+                    <li class="nav-item w-100 border border-dark m-1">
+                        <a class="nav-link" href="divinity.html">Divinités</a>
+                    </li>
+                    <li class="nav-item w-100 border border-dark m-1">
+                        <a class="nav-link" href="skill.html">Compétences</a>
+                    </li>
+                    <li class="nav-item w-100 border border-dark m-1">
+                        <a class="nav-link" href="shop.html">Magasin</a>
+                    </li>
+                    <li class="nav-item w-100 border border-dark m-1">
+                        <a class="nav-link" href="identification.html">se connecter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
     <div class="d-block d-md-none d-lg-none d-xl-none">
         <div class="text-center"><img src="assets/img/towercity.jpg" class="mt-2" width="50%" alt="" usemap="#map-1">
         </div>
@@ -102,15 +135,12 @@
 
 
 
-    <article>
-        <div class="text-center">
-            <h2>News</h2>
-            <p>site en construction</p>
-        </div>
-    </article>
+    
 
 
-
+    <footer class="bg-light text-center align-items-center justify-content-center p-4">
+        <p class="text-center">The Eclipse Company © 2021 Tous les droits réserves </p>
+    </footer>
 
 
     <script src="assets/js/cleave.js"></script>

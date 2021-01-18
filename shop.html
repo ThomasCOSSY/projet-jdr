@@ -12,6 +12,28 @@
 
 <body>
 
+    <div class=" d-none d-xl-block d-lg-block d-md-block">
+        <ul class="nav nav-tabs bg-white">
+            <li class="nav-item">
+              <a class="nav-link active" href="homePC.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
+              <div class="dropdown-menu">
+                <a class="nav-link" href="history.html">Histoire du monde</a>
+                <a class="nav-link" href="rules.html">règles de jeux</a>
+                <a class="nav-link" href="divinity.html">Divinités</a>
+                <a class="nav-link" href="skill.html">Compétences</a>
+                <a class="nav-link" href="shop.html">Magasin</a>            
+                          
+              </div>
+            </li>        
+                <a class="nav-link" href="identification.html">se connecter</a>
+            </li>
+            
+          </ul>
+        </div>   
+
     <h1 class="text-center mt-2 title mb-5">Le marché</h1>
 
     <div class="d-flex justify-content-center align-items-center"><img class="img1 col-8" src="assets/img/shop.jpg"
@@ -19,33 +41,25 @@
 
 
 <div>
-    <div class="container d-flex justify-content-center align-items-center col-12 mt-5">
-
-        <div class=" col">
-            <form action="homePC.html">
-                <button class="button" type="submit">Retour à l'accueil</button>
-            </form>
-        </div>
-
+    <div class="container d-flex justify-content-center align-items-center col-6 mt-5">
+       
         <div class=" col">
 
-            <button class="button" data-toggle="modal" data-target="#forgeModal">Vers la forge</button>
+            <button class="button d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#forgeModal">Forge</button>
 
         </div>
 
         <div class=" col">
-            <button class="button" type="submit" data-toggle="modal" data-target="#alchiModal">Vers
-                l'alchimiste</button>
+            <button class="button d-flex justify-content-center align-items-center" type="submit" data-toggle="modal" data-target="#alchiModal">L'alchimiste</button>
         </div>
 
         <div class=" col">
-            <button class="button" type="submit" data-toggle="modal" data-target="#reliqueModal">Vers l'allée<br>des
-                reliques</button>
+            <button class="button d-flex justify-content-center align-items-center" type="submit" data-toggle="modal" data-target="#reliqueModal">Reliques</button>
         </div>
 
     </div>
 
-    <article class="mt-5"><p class="text-center">Endroit charmant où se mèle citadins et aventurier. Vous trouverez ici tout ce dont vous aurez besoin pour votre aventure !<br>Besoin d'arme et armure de qualité ? Visitez notre forge célébre dans le monde entier !<br>Ne partez pas sans vos potions ! le danger rode partout en ces lieux, allez donc votre notre alchimiste qui vous préparera vos potions et vivres !<br>Dans une allée un peu plus loin, vous trouverez l'allé des reliques ! de puissants objets magiques vous y attendent ! Si vous avez de quoi les acheter... </p></article>
+    <article class="mt-5"><p class="text-center">Endroit charmant où se mèle citadins et aventuriers. Vous trouverez ici tout ce dont vous aurez besoin pour votre aventure !<br>Besoin d'arme et armure de qualité ? Visitez notre forge célébre dans le monde entier !<br>Ne partez pas sans vos potions ! le danger rode partout en ces lieux, allez donc votre notre alchimiste qui vous préparera vos potions et vivres !<br>Dans une allée un peu plus loin, vous trouverez l'allé des reliques ! de puissants objets magiques vous y attendent ! Si vous avez de quoi les acheter... </p></article>
 </div>
 
     <!-- Modal forge descriptif  -->
@@ -182,7 +196,9 @@
 
 
 
-
+    <footer class="bg-light text-center align-items-center justify-content-center p-4">
+        <p class="text-center">The Eclipse Company © 2021 Tous les droits réserves </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

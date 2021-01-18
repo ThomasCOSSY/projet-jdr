@@ -1,13 +1,23 @@
 body{
   background-color: #778DC6;
+  background-image:url(../img/fond-bleu.jpg);
+  background-size: 100%;
 }
 
 a {
   rotate: -10deg;
 }
 
+h1{
+  color: white;
+}
+
 .title{
   font-size: 5vw;
+}
+
+.white{
+  color: white;
 }
 
 

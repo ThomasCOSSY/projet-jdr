@@ -79,3 +79,50 @@ button {
 p{
     font-size: 1vw;
 }
+
+/* navbar */
+nav{
+    position: relative;
+    top: 1vw;
+    left: 3.3vw;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #354bb9;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;  
+    background-color: #778DC6;
+  }
+  
+  .nav-item {
+    margin: 0 auto;
+    padding: auto 0;
+  }
+  
+  .nav-item:hover {
+    border: 1px solid darkgray;
+  }
+  
+  .p-4 ul {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    align-items: center;
+  }
+  
+  .navbar-toggler {
+    background-color: #354bb9;
+  }
+  
+  .navbar-toggler:hover {
+    background-color: white;
+  }
+  
+  .navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(1, 26, 149)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+  
+  li:hover {
+    background-color: #6ccce7;
+  }
