@@ -20,15 +20,16 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
           <div class="dropdown-menu">
-            <a class="nav-link" href="history.html">Histoire du monde</a>
-            <a class="nav-link" href="rules.html">règles de jeux</a>
-            <a class="nav-link" href="divinity.html">Divinités</a>
-            <a class="nav-link" href="skill.html">Compétences</a>
-            <a class="nav-link" href="shop.html">Magasin</a>            
+            <a class="nav-link" href="views/history.php">Histoire du monde</a>
+            <a class="nav-link" href="views/rules.php">règles de jeux</a>
+            <a class="nav-link" href="views/divinity.php">Divinités</a>
+            <a class="nav-link" href="views/skills.php">Compétences</a>
+            <a class="nav-link" href="views/shop.php">Magasin</a>            
                       
           </div>
-        </li>        
-            <a class="nav-link" href="identification.html">se connecter</a>
+        </li> 
+        <li>       
+            <a class="nav-link" href="views/connection.php">se connecter</a>
         </li>
         
       </ul>
@@ -48,22 +49,22 @@
 
         <map name="map-1">
 
-            <area id="page-divinity" class="" shape="rect" coords="100, 230, 300, 500" href="divinity.html"
+            <area id="page-divinity" class="" shape="rect" coords="100, 230, 300, 500" href="views/divinity.php"
                 alt="Temple des Divinités" />
 
-            <area id="page-connection" class="" shape="rect" coords="400, 1, 650, 400" href="connection.html"
+            <area id="page-connection" class="" shape="rect" coords="400, 1, 650, 400" href="views/connection.php"
                 alt="Partir à l'aventure !" />
 
             <area id="page-rules" class="" shape="poly" coords="350, 410, 350, 500, 790, 500, 790, 1, 660, 1, 660, 410"
-                href="rules.html" alt="Règles du jeu" />
+                href="views/rules.php" alt="Règles du jeu" />
 
-            <area id="page-history" class="" shape="rect" coords="10, 650, 180, 1100" href="history.html"
+            <area id="page-history" class="" shape="rect" coords="10, 650, 180, 1100" href="views/history.php"
                 alt="Histoire du monde" />
 
-            <area id="page-shop" class="" shape="rect" coords="200, 650, 400, 1100" href="shop.html"
+            <area id="page-shop" class="" shape="rect" coords="200, 650, 400, 1100" href="views/shop.php"
                 alt="le marché" />
 
-            <area id="page-skills" class="" shape="rect" coords="450, 550, 790, 1100" href="skills.html"
+            <area id="page-skills" class="" shape="rect" coords="450, 550, 790, 1100" href="views/skills.php"
                 alt="Compétences" />
 
         </map>
@@ -93,22 +94,22 @@
             <div class="p-4">
                 <ul class="navbar-nav text-center col-12 m-auto">
                     <li class="nav-item w-100 border border-dark m-1">
-                        <a class="nav-link" href="history.html">Histoire du monde</a>
+                        <a class="nav-link" href="views/history.php">Histoire du monde</a>
                     </li>
                     <li class="nav-item w-100 border border-dark m-1">
-                        <a class="nav-link" href="rules.html">règles de jeux</a>
+                        <a class="nav-link" href="views/rules.php">règles de jeux</a>
                     </li>
                     <li class="nav-item w-100 border border-dark m-1">
-                        <a class="nav-link" href="divinity.html">Divinités</a>
+                        <a class="nav-link" href="views/divinity.php">Divinités</a>
                     </li>
                     <li class="nav-item w-100 border border-dark m-1">
-                        <a class="nav-link" href="skill.html">Compétences</a>
+                        <a class="nav-link" href="views/skills.php">Compétences</a>
                     </li>
                     <li class="nav-item w-100 border border-dark m-1">
-                        <a class="nav-link" href="shop.html">Magasin</a>
+                        <a class="nav-link" href="views/shop.php">Magasin</a>
                     </li>
                     <li class="nav-item w-100 border border-dark m-1">
-                        <a class="nav-link" href="identification.html">se connecter</a>
+                        <a class="nav-link" href="views/connection.php">se connecter</a>
                     </li>
                 </ul>
             </div>
@@ -138,7 +139,7 @@
     
 
 
-    <footer class="bg-light text-center align-items-center justify-content-center p-4">
+    <footer class="bg-light text-center align-items-center justify-content-center p-4 footer">
         <p class="text-center">The Eclipse Company © 2021 Tous les droits réserves </p>
     </footer>
 

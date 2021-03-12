@@ -126,7 +126,7 @@ function createProducts(product) {
     // Je suis en mode faineant : j'utilise les magic quote pour écrire mon code html
     div.innerHTML =
         `<div class="card col m-1" style="width: 18rem; height: 42rem">
-            <img src="assets/img/${product.img}" class="card-img-top" alt="${product.name}">
+            <img src="../assets/img/${product.img}" class="card-img-top" alt="${product.name}">
             <div class="card-body">
                 <p class="card-title h5">${product.name}</p>
                 <p class="card-text">Passif : ${product.passif}</p>

@@ -1,0 +1,4 @@
+RewriteEngine on
+ErrorDocument 404 /views/erreur.php
+
+

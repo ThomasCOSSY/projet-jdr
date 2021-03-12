@@ -20,6 +20,11 @@ h1{
   color: white;
 }
 
+.red{
+  color: white;
+  background-color: red;
+}
+
 
 .middle{
   top: 30%;
@@ -78,7 +83,7 @@ li:hover {
 
 /* bouton */
 
-button {
+.button {
   border-top: 1px solid #96d1f8;
   background: #65a9d7;
   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
@@ -110,3 +115,20 @@ button {
   border-top-color: #1b435e;
   background: #1b435e;
   }
+
+/*img preview pour avatar */
+
+  #preview {
+    width: 200px; 
+    max-height: 200px;
+    display: block;
+}
+
+/*footer */
+
+.footer {     
+  position:absolute;
+  width: 100%;
+  bottom: 0;
+  height: 1.5vw;  
+}

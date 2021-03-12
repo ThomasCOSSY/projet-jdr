@@ -7,7 +7,7 @@
     <title>Le marché</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="../assets/css/shop.css">
 </head>
 
 <body>
@@ -15,20 +15,20 @@
     <div class=" d-none d-xl-block d-lg-block d-md-block">
         <ul class="nav nav-tabs bg-white">
             <li class="nav-item">
-              <a class="nav-link active" href="homePC.html">Accueil</a>
+              <a class="nav-link active" href="../index.php">Accueil</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
               <div class="dropdown-menu">
-                <a class="nav-link" href="history.html">Histoire du monde</a>
-                <a class="nav-link" href="rules.html">règles de jeux</a>
-                <a class="nav-link" href="divinity.html">Divinités</a>
-                <a class="nav-link" href="skill.html">Compétences</a>
-                <a class="nav-link" href="shop.html">Magasin</a>            
+                <a class="nav-link" href="../views/history.php">Histoire du monde</a>
+                <a class="nav-link" href="../views/rules.php">règles de jeux</a>
+                <a class="nav-link" href="../views/divinity.php">Divinités</a>
+                <a class="nav-link" href="../views/skills.php">Compétences</a>
+                <a class="nav-link" href="../views/shop.php">Magasin</a>            
                           
               </div>
             </li>        
-                <a class="nav-link" href="identification.html">se connecter</a>
+                <a class="nav-link" href="../views/connection.php">se connecter</a>
             </li>
             
           </ul>
@@ -36,7 +36,7 @@
 
     <h1 class="text-center mt-2 title mb-5">Le marché</h1>
 
-    <div class="d-flex justify-content-center align-items-center"><img class="img1 col-8" src="assets/img/shop.jpg"
+    <div class="d-flex justify-content-center align-items-center"><img class="img1 col-8" src="../assets/img/shop.jpg"
             alt="un marché remplit d'aventurier"></div>
 
 
@@ -45,7 +45,7 @@
        
         <div class=" col">
 
-            <button class="button d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#forgeModal">Forge</button>
+            <button class="button d-flex justify-content-center align-items-center" type="submit" data-toggle="modal" data-target="#forgeModal">Forge</button>
 
         </div>
 
@@ -74,7 +74,7 @@
 
                 <div class="row modal-body d-flex justify-content-center">
                     <div class="col-10">
-                        <img src="assets/img/forgeron.jpg" width="100%">
+                        <img src="../assets/img/forgeron.jpg" width="100%">
                     </div>
 
 
@@ -133,7 +133,7 @@
 
                 <div class="row modal-body d-flex justify-content-center">
                     <div class="col-10">
-                        <img src="assets/img/potions.jpg" width="100%">
+                        <img src="../assets/img/potions.jpg" width="100%">
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@
 
                 <div class="row modal-body d-flex justify-content-center">
                     <div class="col-10">
-                        <img src="assets/img/relique.jpg" width="100%">
+                        <img src="../assets/img/relique.jpg" width="100%">
                     </div>
                 </div>
 
@@ -206,8 +206,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
-    <script src="assets/js/cleave.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/cleave.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 

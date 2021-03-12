@@ -7,19 +7,42 @@
     <title>Compétences</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/rules.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
+  
+    <div class=" d-none d-xl-block d-lg-block d-md-block">
+        <ul class="nav nav-tabs bg-white">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.php">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
+              <div class="dropdown-menu">
+                <a class="nav-link" href="../views/history.php">Histoire du monde</a>
+                <a class="nav-link" href="../views/rules.php">règles de jeux</a>
+                <a class="nav-link" href="../views/divinity.php">Divinités</a>
+                <a class="nav-link" href="../views/skills.php">Compétences</a>
+                <a class="nav-link" href="../views/shop.php">Magasin</a>            
+                          
+              </div>
+            </li>        
+                <a class="nav-link" href="../views/connection.php">se connecter</a>
+            </li>
+            
+          </ul>
+        </div>   
 
+        <h1 class="white text-center">Compétences</h1>
 
-    <div class="d-flex justify-content-center align-items-center m-auto col-8"><img class="img1 col-10"
-    src="assets/img/UnderConstruction.jpg" alt="En construction"></div>
+        <div class="d-flex justify-content-center align-items-center  col-8 m-auto"><img class="img1 col-10"
+    src="../assets/img/UnderConstruction.jpg" alt="En construction"></div>
 
 
 <div class="d-flex justify-content-center align-items-center m-auto">
     <pre>
-<article>
+<article class="white text-center">
             Fouet
  
 Maitrise          	10PX
@@ -2295,13 +2318,23 @@ Tempête d’acier, chaque éclat d’acier tournent autour du lanceur infligean
 
 
 
-    <form action="homePC.html">
+    <form action="../index.php">
         <button type="submit">Retour à l'accueil</button>
     </form>
 
 
-    <script src="assets/js/cleave.js"></script>
-    <script src="assets/js/main.js"></script>
+    <footer class="bg-light text-center align-items-center justify-content-center p-4">
+        <p class="text-center">The Eclipse Company © 2021 Tous les droits réserves </p>
+    </footer>
+
+    <script src="../assets/js/cleave.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
 
 </body>
 

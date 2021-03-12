@@ -7,7 +7,7 @@
     <title>Histoire</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link href="assets/css/history.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/history.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -16,26 +16,26 @@
     <div class=" d-none d-xl-block d-lg-block d-md-block">
         <ul class="nav nav-tabs bg-white">
             <li class="nav-item">
-              <a class="nav-link active" href="homePC.html">Accueil</a>
+              <a class="nav-link active" href="../index.php">Accueil</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
               <div class="dropdown-menu">
-                <a class="nav-link" href="history.html">Histoire du monde</a>
-                <a class="nav-link" href="rules.html">règles de jeux</a>
-                <a class="nav-link" href="divinity.html">Divinités</a>
-                <a class="nav-link" href="skill.html">Compétences</a>
-                <a class="nav-link" href="shop.html">Magasin</a>            
+                <a class="nav-link" href="../views/history.php">Histoire du monde</a>
+                <a class="nav-link" href="../views/rules.php">règles de jeux</a>
+                <a class="nav-link" href="../views/divinity.php">Divinités</a>
+                <a class="nav-link" href="../views/skills.php">Compétences</a>
+                <a class="nav-link" href="../views/shop.php">Magasin</a>            
                           
               </div>
             </li>        
-                <a class="nav-link" href="identification.html">se connecter</a>
+                <a class="nav-link" href="../views/connection.php">se connecter</a>
             </li>
             
           </ul>
-        </div>     
+        </div>       
 
-    <div ><img class="background" src="assets/img/vieux-parchemin-avec-une-lumière.jpg"></div>
+    <div ><img class="background" src="../assets/img/vieux-parchemin-avec-une-lumière.jpg"></div>
 <div class="container col-12">
     
     <h1 class="text-center title">Histoire du monde</br></h1>
@@ -54,7 +54,7 @@
             LOS : neige<br>
             ERESSEA : Capital elfique<br></p>
         <div class="d-flex justify-content-center align-items-center">
-            <img class="img1" src="assets/img/map-monde.png" alt="Carte du monde">
+            <img class="img1" src="../assets/img/map-monde.png" alt="Carte du monde">
         </div>
         <p><br>Un jour, un champion des ténèbres draina la puissance de plusieurs esprits protecteurs du monde. Il asservit
             les Orcs et se lança dans la conquête du monde. Alors que rien ne semblait pouvoir l'arrêter, 4 Elfes de
@@ -91,8 +91,8 @@
 </footer>
 
     
-    <script src="assets/js/cleave.js"></script>
-    <script src="assets/js/history.js"></script>
+    <script src="../assets/js/cleave.js"></script>
+    <script src="../assets/js/history.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

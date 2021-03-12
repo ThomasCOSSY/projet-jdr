@@ -7,7 +7,7 @@
     <title>Divinités</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -15,29 +15,29 @@
     <div class=" d-none d-xl-block d-lg-block d-md-block">
         <ul class="nav nav-tabs bg-white">
             <li class="nav-item">
-              <a class="nav-link active" href="homePC.html">Accueil</a>
+              <a class="nav-link active" href="../index.php">Accueil</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
               <div class="dropdown-menu">
-                <a class="nav-link" href="history.html">Histoire du monde</a>
-                <a class="nav-link" href="rules.html">règles de jeux</a>
-                <a class="nav-link" href="divinity.html">Divinités</a>
-                <a class="nav-link" href="skill.html">Compétences</a>
-                <a class="nav-link" href="shop.html">Magasin</a>            
+                <a class="nav-link" href="../views/history.php">Histoire du monde</a>
+                <a class="nav-link" href="../views/rules.php">règles de jeux</a>
+                <a class="nav-link" href="../views/divinity.php">Divinités</a>
+                <a class="nav-link" href="../views/skills.php">Compétences</a>
+                <a class="nav-link" href="../views/shop.php">Magasin</a>            
                           
               </div>
             </li>        
-                <a class="nav-link" href="identification.html">se connecter</a>
+                <a class="nav-link" href="../views/connection.php">se connecter</a>
             </li>
             
           </ul>
-        </div>  
+        </div>    
 
         <h1 class="text-center mt-2 title">Les divinitées</h1>
 
 <div class="d-flex justify-content-center align-items-center m-auto col-8"><img class="img1 col-10"
-    src="assets/img/divinity.jpg" alt="divinitées"></div>
+    src="../assets/img/divinity.jpg" alt="divinitées"></div>
 
     <article class="white m-5 text-center">
         <h3>Que sont elles ?</h3>
@@ -58,8 +58,8 @@
     </footer>
 
 
-    <script src="assets/js/cleave.js"></script>
-    <script src="assets/js/divinity.js"></script>
+    <script src="../assets/js/cleave.js"></script>
+    <script src="../assets/js/divinity.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
