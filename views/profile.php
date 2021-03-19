@@ -2,7 +2,6 @@
 
 require "../controllers/profileController.php";
 
-
 ?>
 
 <!DOCTYPE html>
@@ -20,24 +19,25 @@ require "../controllers/profileController.php";
 <body>
 
    <h1>Bonjour <?= $_SESSION["user"]["username"] ?> !</h1>
-
+<div class="d-flex justify-content-center align-items-center white"><?= isset($_SESSION["message"]) ? $_SESSION["message"] : "" ?></div>
 
    <div class="container col-12 d-flex">
-      <div class="col-3">
-         <div class="d-flex justify-content-center align-items-center">
-            <?php
-            if ($_SESSION["user"]["avatar"] != null){
+      <div class="d-flex flex-column">
+         <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center">
+               <?php
+               if ($_SESSION["user"]["avatar"] != null) {
                ?>
-               <img src="<?= $_SESSION['user']['avatar'] ?>" width="120" style="width: 100%" />
-            <?php
-            } else {
-            ?>
-               <img src="../assets/img/avatar/defaults/default.png" width="120" style="width: 100%" />
-            <?php
-            }
-            ?>
+                  <img src="<?= $_SESSION['user']['avatar'] ?>" width="120" style="width: 100%" />
+               <?php
+               } else {
+               ?>
+                  <img src="../assets/img/avatar/defaults/default.png" width="120" style="width: 100%" />
+               <?php
+               }
+               ?>
+            </div>
          </div>
-
 
          <div class="row d-flex justify-content-center align-items-center">
 
@@ -51,10 +51,12 @@ require "../controllers/profileController.php";
                </form>
             </div>
          </div>
+
       </div>
+
       <div class="col-8 d-flex justify-content-center align-items-center">
          <!-- tableau récapitulatif des infos -->
-         <main class="conainer bg-white m-5 p-2 d-flex justify-content-center align-items-center">
+         <main class="bg-white m-5 p-2 d-flex justify-content-center align-items-center">
             <div class="row">
                <section class="col-12">
                   <h2>Utilisateur : </h2>
@@ -79,30 +81,52 @@ require "../controllers/profileController.php";
                            <td>
                               <form method="post" action="suppression.php"><input type="submit" name="valider" value="Supprimer" /></form>
                            </td>
-                        </tr>                        
+                        </tr>
 
                      </tbody>
 
                      <tfoot>
-                     
-                           <div>
-                              <button class="" onclick="window.location.href = 'deconnect.php';">Se déconnecter</button>
-                           </div>
-                        
+
+                        <div>
+                           <button class="" onclick="window.location.href = 'deconnect.php';">Se déconnecter</button>
+                        </div>
+
                      </tfoot>
                   </table>
-
+               </section>
             </div>
+         </main>
       </div>
    </div>
 
 
+   <main class="bg-white m-5 p-2 d-flex justify-content-center align-items-center">
+      <div class="row">
+         <section class="col-12">
+            <h2>Vos personnages : </h2>
+            <?php
+            $playerList = $player->getAllPlayerName($id);
+            if (isset($playerList) && $playerList != false) {
+               foreach ($playerList as $key => $value) {
+            ?>
+                  <div class="row ">
+                     <div class="m-2"><p>Personnage : <?= $value['player_firstname'] . " " . $value['player_lastname'] ?> <br></p></div>
 
+                     <div class="m-2"><form  method="post" action="personnage.php"><button type="submit" name="playerId" value="<?= $value['player_id'] ?>">Fiche du personnage</button></form></div>
+                     
+                     <div class="m-2"><form  method="post" action="deleteplayer.php"><button type="submit" name="playerId" value="<?= $value['player_id'] ?>">Supprimer</button></form></div>
 
+                  </div>
+            <?php
+               };
+            }
+            ?>
 
+            <form class="mt-5" method="post" action="addplayer.php"><input type="submit" name="" value="Nouveau personnage" /></form>
 
-
-
+         </section>
+      </div>
+   </main>
 
 
 

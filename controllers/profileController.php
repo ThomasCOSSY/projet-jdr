@@ -1,12 +1,14 @@
 <?php
-session_start();
-
- 
+session_start(); 
 require "../Models/Database.php";
 require "../Models/Users_role.php";
 require "../Models/Users.php";
+require "../Models/Player.php";
 
 $users = new Users();
+$player = new Player();
+
+$id = $_SESSION["user"]["id"];
 
 //  pour l avatar
 

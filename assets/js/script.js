@@ -21,7 +21,7 @@ usernameInput.addEventListener("blur", async function() {
         username: usernameInput.value
     };
     if(dataSearch.username != "") {
-        let response = await fetch("/Controllers/sign-in-checker-controller.php?username=" + dataSearch.username, {
+        let response = await fetch("/controllers/sign-in-checker-controller.php?username=" + dataSearch.username, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -39,3 +39,11 @@ usernameInput.addEventListener("blur", async function() {
         }
     }
 })
+
+
+// AJAX mise à jour auto des éléments du personnage
+
+// let playerLastnameInput = document.getElementsByTagName("playerLastname");
+// playerLastnameInput.addEventListener("blur", async function() {
+
+// }
