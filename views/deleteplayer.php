@@ -1,6 +1,6 @@
 <?php
 require "../Controllers/deleteplayerController.php";
-var_dump($id);
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
