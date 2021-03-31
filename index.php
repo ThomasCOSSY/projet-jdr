@@ -13,8 +13,11 @@
 
     <div class=" d-none d-xl-block d-lg-block d-md-block">
         <ul class="nav nav-tabs bg-white">
+        <li class="">
+        <img src="assets/img/logo.png" alt="logo eclipse" width="50em" class="">
+        </li>
             <li class="nav-item">
-                <a class="nav-link active" href="homePC.html">Accueil</a>
+                <a class="nav-link active" href="index.php">Accueil</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
@@ -77,7 +80,7 @@
     <div class="Nav-fluid justify-content-center d-block d-md-none d-lg-none d-xl-none">
         <div class="fixed-top " style="width: max-content;">
             <nav class="navbar navbar-dark">
-                <button class="navbar-toggler custom-toggler mt-5" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>

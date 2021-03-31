@@ -8,8 +8,21 @@
 }
 
 body{
-    background-color: #018ECC;
-  }
+     
+  background-image:url(../img/fond-bleu.jpg);
+  background-size: 100%;
+}
+
+.white{
+  color: white;
+}
+
+.backgroundWhite{
+  background-color: white;
+  color: black;
+  font-family: cursive;
+  
+}
 
   /* bouton */
 

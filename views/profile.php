@@ -18,6 +18,70 @@ require "../controllers/profileController.php";
 
 <body>
 
+<!-- grand ecran -->
+
+<div class=" d-none d-xl-block d-lg-block d-md-block">
+        <ul class="nav nav-tabs bg-white">
+        <li class="">
+        <img src="../assets/img/logo.png" alt="logo eclipse" width="50em" class="">
+        </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../index.php">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
+                <div class="dropdown-menu">
+                    <a class="nav-link" href="history.php">Histoire du monde</a>
+                    <a class="nav-link" href="rules.php">règles de jeux</a>
+                    <a class="nav-link" href="divinity.php">Divinités</a>
+                    <a class="nav-link" href="skills.php">Compétences</a>
+                    <a class="nav-link" href="shop.php">Magasin</a>
+
+                </div>
+            </li>
+            <li>
+                <a class="nav-link" href="connection.php">se connecter</a>
+            </li>
+
+        </ul>
+    </div>   
+
+    <!-- petit ecran -->
+
+    <div class="Nav-fluid justify-content-center d-block d-md-none d-lg-none d-xl-none">
+        <div class="fixed-top " style="width: max-content;">
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <ul class="navbar-nav text-center col-12 m-auto">
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="history.php">Histoire du monde</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="rules.php">règles de jeux</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="divinity.php">Divinités</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="skills.php">Compétences</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="shop.php">Magasin</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="connection.php">se connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
    <h1>Bonjour <?= $_SESSION["user"]["username"] ?> !</h1>
 <div class="d-flex justify-content-center align-items-center white"><?= isset($_SESSION["message"]) ? $_SESSION["message"] : "" ?></div>
 
@@ -46,7 +110,7 @@ require "../controllers/profileController.php";
                   <label for="file" style="margin-bottom: 0; margin-top: 5px; display: inline-flex">
                      <input id="file" type="file" name="file" class="hide-upload" required />
                      <i class="fa fa-plus image-plus"></i>
-                     <input type="submit" name="avatar" value="Envoyer">
+                     <input class="btn btn-success"  type="submit" name="avatar" value="Envoyer">
                   </label>
                </form>
             </div>
@@ -76,10 +140,10 @@ require "../controllers/profileController.php";
                            <td><?= $_SESSION["user"]["username"] ?></td>
                            <td><?= $_SESSION["user"]["mail"] ?></td>
                            <td>
-                              <form method="post" action="modification-profile.php"><input type="submit" name="modifyUsersId" value="modifier les informations" /></form>
+                              <form method="post" action="modification-profile.php"><input class="btn btn-info"  type="submit" name="modifyUsersId" value="modifier les informations" /></form>
                            </td>
                            <td>
-                              <form method="post" action="suppression.php"><input type="submit" name="valider" value="Supprimer" /></form>
+                              <form method="post" action="suppression.php"><input class="btn btn-danger"  type="submit" name="valider" value="Supprimer" /></form>
                            </td>
                         </tr>
 
@@ -88,7 +152,7 @@ require "../controllers/profileController.php";
                      <tfoot>
 
                         <div>
-                           <button class="" onclick="window.location.href = 'deconnect.php';">Se déconnecter</button>
+                           <button class="btn btn-info" onclick="window.location.href = 'deconnect.php';">Se déconnecter</button>
                         </div>
 
                      </tfoot>
@@ -112,9 +176,9 @@ require "../controllers/profileController.php";
                   <div class="row ">
                      <div class="m-2"><p>Personnage : <?= $value['player_firstname'] . " " . $value['player_lastname'] ?> <br></p></div>
 
-                     <div class="m-2"><form  method="post" action="personnage.php"><button type="submit" name="playerId" value="<?= $value['player_id'] ?>">Fiche du personnage</button></form></div>
+                     <div class="m-2"><form  method="post" action="personnage.php"><button class="btn btn-info" type="submit" name="playerId" value="<?= $value['player_id'] ?>">Fiche du personnage</button></form></div>
                      
-                     <div class="m-2"><form  method="post" action="deleteplayer.php"><button type="submit" name="playerId" value="<?= $value['player_id'] ?>">Supprimer</button></form></div>
+                     <div class="m-2"><form  method="post" action="deleteplayer.php"><button class="btn btn-danger" type="submit" name="playerId" value="<?= $value['player_id'] ?>">Supprimer</button></form></div>
 
                   </div>
             <?php
@@ -122,7 +186,7 @@ require "../controllers/profileController.php";
             }
             ?>
 
-            <form class="mt-5" method="post" action="addplayer.php"><input type="submit" name="" value="Nouveau personnage" /></form>
+            <form class="mt-5" method="post" action="addplayer.php"><input class="btn btn-success" type="submit" name="" value="Nouveau personnage" /></form>
 
          </section>
       </div>

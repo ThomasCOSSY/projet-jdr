@@ -132,3 +132,10 @@ li:hover {
   bottom: 0;
   height: 1.5vw;  
 }
+
+
+.backgroundWhite{
+  background-color: white;
+  color: black;
+  font-family: cursive;
+}

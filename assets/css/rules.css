@@ -1,6 +1,6 @@
 
     body{
-      background-color: #778DC6;
+     
       background-image:url(../img/fond-bleu.jpg);
       background-size: 100%;
     }
@@ -16,16 +16,17 @@
 
     
   
-  .backgroundBlue{
-      background-color: #018ECC;
-      color: white;
+  .backgroundWhite{
+      background-color: white;
+      color: black;
+      font-family: cursive;
     }
 
 
 /* bouton */
 
 button {
-    border-top: 1px solid #96d1f8;
+    border-top: 1px solid #f89696;
     background: #65a9d7;
     background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
     background: -webkit-linear-gradient(top, #3e779d, #65a9d7);

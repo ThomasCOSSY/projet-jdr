@@ -15,6 +15,69 @@ require "../Controllers/addPlayerController.php";
 </head>
 
 <body>
+    <!-- grand ecran -->
+
+<div class=" d-none d-xl-block d-lg-block d-md-block">
+        <ul class="nav nav-tabs bg-white">
+        <li class="">
+        <img src="../assets/img/logo.png" alt="logo eclipse" width="50em" class="">
+        </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../index.php">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Navigation</a>
+                <div class="dropdown-menu">
+                    <a class="nav-link" href="history.php">Histoire du monde</a>
+                    <a class="nav-link" href="rules.php">règles de jeux</a>
+                    <a class="nav-link" href="divinity.php">Divinités</a>
+                    <a class="nav-link" href="skills.php">Compétences</a>
+                    <a class="nav-link" href="shop.php">Magasin</a>
+
+                </div>
+            </li>
+            <li>
+                <a class="nav-link" href="connection.php">se connecter</a>
+            </li>
+
+        </ul>
+    </div>   
+
+    <!-- petit ecran -->
+
+    <div class="Nav-fluid justify-content-center d-block d-md-none d-lg-none d-xl-none">
+        <div class="fixed-top " style="width: max-content;">
+            <nav class="navbar navbar-dark">
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <ul class="navbar-nav text-center col-12 m-auto">
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="history.php">Histoire du monde</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="rules.php">règles de jeux</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="divinity.php">Divinités</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="skills.php">Compétences</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="shop.php">Magasin</a>
+                        </li>
+                        <li class="nav-item w-100 border border-dark m-1">
+                            <a class="nav-link" href="connection.php">se connecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <Div class="col-12 d-flex flex-column justify-content-center align-items-center mt-5">
         <!-- les infos joueurs -->
@@ -106,7 +169,7 @@ require "../Controllers/addPlayerController.php";
                             <label for="playerPhobia" class="m-1">Phobie : </label>
                             <input type="text" name="playerPhobia" required>
                         </div>
-                        <div class="m-1"> <button type="submit" name="addPlayer">Créer</button> </div>
+                        <div class="m-1"> <button class="btn btn-success"type="submit" name="addPlayer">Créer</button> </div>
                     </form>
 
 

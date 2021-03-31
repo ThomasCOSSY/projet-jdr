@@ -17,7 +17,7 @@
 
     <div class="d-flex justify-content-center align-items-center mt-5">
         <form action="../index.php">
-            <button type="submit">Retour à l'accueil</button>
+            <button class="btn btn-success" type="submit">Retour à l'accueil</button>
         </form>
     </div>
 
